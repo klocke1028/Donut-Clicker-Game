@@ -1,0 +1,94 @@
+body {
+    background-image: url("./img/Donuts.jpg");
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    color: white;
+    background-color: rgb(247, 8, 147);
+    border: solid 5px black;
+    border-radius: 25px;
+}
+
+a {
+color: white;
+}
+
+a:hover {
+    color: rgb(12, 223, 255);
+}
+
+.store-container {
+    display: inline-block;
+    background-color: rgb(247, 8, 147);
+    border: solid 5px black;
+    border-radius: 25px;
+    width: 15%;
+    height: 60vh;
+    margin: 20px;
+    padding: 20px;
+}
+
+.store-header {
+    color: white;
+}
+
+.store-menu {
+    color: white;
+}
+
+.store-button {
+    border-radius: 8px;
+    font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+    background-color: rgb(12, 223, 255);
+}
+
+.gameplay {
+    display: inline-block;
+    background-color: rgb(247, 8, 147);
+    border: solid 5px black;
+    border-radius: 25px;
+    width: 25%;
+    height: 60vh;
+    margin: 20px;
+    padding: 20px;
+}
+
+#score {
+    display: inline-block;
+    padding-top: 25px;
+    margin-bottom: 25px;
+    border: 5px solid black;
+    border-radius: 25px;
+    background-color: white;
+    width: 90%;
+    height: 10vh;
+    font-size: large;
+    
+
+
+}
+
+.reset {
+    display: inline-block;
+    justify-content: center; 
+    margin: 1rem;
+    padding: 1rem;   
+}
+
+.reset-button {
+    border-radius: 8px;
+    font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+    background-color: yellow;
+    width: 10vh;
+    height: 6vh;
+}
+
+
