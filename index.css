@@ -53,10 +53,17 @@ a:hover {
     background-color: rgb(247, 8, 147);
     border: solid 5px black;
     border-radius: 25px;
-    width: 25%;
-    height: 60vh;
+    width: 35%;
+    height: 25vh;
     margin: 20px;
     padding: 20px;
+}
+
+#make-donuts {
+    border-radius: 8px;
+    font-size: larger;
+    font-style: italic;
+    font-weight: bold;  background-color: rgb(12, 223, 255);
 }
 
 #score {
