@@ -27,7 +27,7 @@ a:hover {
     border: solid 5px black;
     border-radius: 25px;
     width: 15%;
-    height: 60vh;
+    height: 36vh;
     margin: 20px;
     padding: 20px;
 }
@@ -36,15 +36,33 @@ a:hover {
     color: white;
 }
 
+#autoClickers {
+    color: white;
+    text-decoration: underline;
+}
+
+#autoClickersPurchased {
+    font-size: 20px;
+}
+
+#cost {
+    text-decoration: underline;
+}
+
+#autoClickersCost {
+    font-size: 20px;
+}
+
 .store-menu {
     color: white;
 }
 
-.store-button {
+#storeButton {
     border-radius: 8px;
     font-size: medium;
     font-style: italic;
     font-weight: bold;
+    padding: 1px;
     background-color: rgb(12, 223, 255);
 }
 
@@ -54,28 +72,32 @@ a:hover {
     border: solid 5px black;
     border-radius: 25px;
     width: 35%;
-    height: 25vh;
+    height: 45vh;
     margin: 20px;
     padding: 20px;
 }
 
-#make-donuts {
+#donutNumText {
+    font-size: 25px;
+    text-decoration:underline;
+    color: white;
+}
+
+#makeDonuts {
     border-radius: 8px;
     font-size: larger;
     font-style: italic;
     font-weight: bold;  background-color: rgb(12, 223, 255);
 }
 
-#score {
+#playerScore {
     display: inline-block;
     padding-top: 25px;
     margin-bottom: 25px;
-    border: 5px solid black;
     border-radius: 25px;
-    background-color: white;
     width: 90%;
     height: 10vh;
-    font-size: large;
+    font-size: 40px;
     
 
 
@@ -88,7 +110,7 @@ a:hover {
     padding: 1rem;   
 }
 
-.reset-button {
+#resetButton {
     border-radius: 8px;
     font-size: medium;
     font-style: italic;

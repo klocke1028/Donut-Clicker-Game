@@ -17,45 +17,35 @@
       </h2>
       <h3><a href="katlynlocke1028@gmail.com">Contact Us</a></h3>
     </header>
+      
       <div class="gameplay">
-        <p>Number of Donuts Made</p>
-        <div id="score-text"></div>
-        <a id="player-score">0 Donuts</a>
+        <p id="donutNumText">Number of Donuts Made</p>
+        <a id="playerScore">0 Donuts</a>
         <div>
-          <button id="make-donuts">Make Donuts!</button>
+          <button onclick="donutButtonClicked()" id="makeDonuts">Click to Make Donuts!</button>
         </div>
         <div class="reset">
-          <button class="reset-button">Reset</button>
+          <button id="resetButton">Reset</button>
           </div>
       </div>
       
       <div class="store-container">
       <div class="store-header">
-        <h2>- Store -</h2>
+        <h2>- Buy Auto Clickers -</h2>
+      </div>
+      <div>
+        <p id="autoClickers">Auto Clickers Purchased</p>
+        <a id="autoClickersPurchased">0</a>
       </div>
         <div class="store-menu">
           <div>
-            <p>1: 100 Donuts</p>
-            <button class="store-button">Buy Upgrade</button>
-          </div>
-          <div>
-            <p>2: 120 Donuts</p>
-            <button class="store-button">Buy Upgrade</button>
-          </div>
-          <div>
-            <p>3: 130 Donuts</p>
-            <button class="store-button">Buy Upgrade</button>
-          </div>
-          <div>
-            <p>4: 140 Donuts</p>
-            <button class="store-button">Buy Upgrade</button>
-          </div>
-          <div>
-            <p>5: 150 Donuts</p>
-            <button class="store-button">Buy Upgrade</button>
-          </div>
+          <p id="cost">Auto Clicker Cost:</p>
+          <a id="autoClickerCost">0</a>
         </div>
+        <button id="storeButton">Purchase Auto Clicker</button>
     <script src="./index.js"></script>
+    <script src="./donutClicker.js"></script>
+      </div>
       </div>
   </body>
 </html>
