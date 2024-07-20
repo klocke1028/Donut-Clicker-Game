@@ -7,20 +7,26 @@ const costOfAc = document.querySelector("#auto-clicker-cost");
 
 const fredDonutClicker = new donutClicker()
 
-function gameDisplay() {
-    playerDonutCount.value = donutClicker.getNumOfDonuts();
-    autoClickersPurchased.value = donutClicker.getAutoClickerNum();
-    autoClickerCost.value = donutClicker.getAutoClickerCost();
-    donutsPerClick.value = donutClicker.getNumOfDonutsPerClick();
-    autoClickerButton.disabled = donutClicker.updateStoreButton();
+const updateTotalDonuts = (totalDonuts, donutClicker) => {
+    totalDonuts.innerText = donutClicker.getNumOfDonuts();
 }
 
-gameDisplay();
+const updateAutoClickerNum = (totalAutoClickers, donutClicker) => {
+    totalAutoClickers.innerText = donutClicker.getAutoClickerNum();
+}
 
-donutMakerButton.addEventListener("click", function() {
-    donutClicker.makeADonut();
-    gameDisplay();
-});
+const updateAutoClickerCost = (costOfAc, donutClicker) => {
+   
+}
+
+
+const makeDonutButtonWork = (makeDonutsButton, totalDonuts, donutClicker) => {
+    makeDonutsButton.addEventListener("click", () => {
+        donutClicker.makeADonut()
+        updateTotalDonuts(totalDonuts, donutClicker);
+
+    })
+}
 
 buyAutoClicker.addEventListener("click", function() {
    setInterval(function () {
