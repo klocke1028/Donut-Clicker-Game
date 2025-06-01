@@ -4,47 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Donut Clicker</title>
   </head>
   <body>
     <header>
-      <h1>
-        Fred the Baker Baking Company
-      </h1>
-      <h2>
-        Inspired by <a href="https://orteil.dashnet.org/cookieclicker/"> Cookie Clicker</a>
+      <h1>Fred the Baker Baking Company</h1>
+      <h2 id="inspired-by-text">
+        Inspired by:
+        <a href="https://orteil.dashnet.org/cookieclicker/"> Cookie Clicker </a>
       </h2>
     </header>
-      
-      <div class="gameplay">
-        <p id="donut-num-text">Number of Donuts Made</p>
-        <a id="player-score">0</a>
+    <main class="main-container">
+      <section class="gameplay">
+        <p id="donut-num-text">Available Donuts</p>
+        <span id="player-score">0</span>
+        <p id="total-donuts-text">Total Donuts Made</p>
+        <span id="total-donuts-made">0</span>
         <div>
-          <button id="make-donuts">Click to Make Donuts!</button>
+          <button id="make-donuts">Make Those Donuts!</button>
         </div>
         <div class="reset">
           <button id="reset-button">Reset</button>
-          </div>
-      </div>
-      
-      <div class="store-container">
-      <div class="store-header">
-        <h2>- Buy Auto Clickers -</h2>
-      </div>
-      <div>
-        <p id="auto-clickers">Auto Clickers Purchased</p>
-        <a id="auto-clickers-purchased">0</a>
-      </div>
+        </div>
+      </section>
+
+      <section class="store-container">
+        <div>
+          <h2 id="store-header">Upgrades</h2>
+        </div>
+        <div>
+          <p id="auto-clickers">Auto Clickers Purchased</p>
+          <span id="auto-clickers-purchased">0</span>
+        </div>
         <div class="store-menu">
           <div>
-          <p id="cost">Auto Clicker Cost:</p>
-          <a id="auto-clicker-cost">100</a>
+            <p id="cost">Auto Clicker Cost</p>
+            <span id="auto-clicker-cost">100</span>
+          </div>
+          <button id="store-button">Purchase Auto Clicker</button>
         </div>
-        <button id="store-button">Purchase Auto Clicker</button>
+      </section>
+    </main>
+
     <script src="./index.js"></script>
     <script src="./donutClicker.js"></script>
-      </div>
-      </div>
   </body>
 </html>
